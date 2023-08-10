@@ -1,0 +1,8 @@
+dongho=input().split()
+A=int(dongho[0])
+B=int(dongho[1])
+C=int(dongho[2])
+print((A+B)%C)
+print((A%C + B%C)%C)
+print((A*B)%C)
+print((A%C * B%C)%C)
