@@ -1,12 +1,10 @@
+from collections import defaultdict
 def solution(clothes):
-    answer = {}
+    dd = defaultdict(int)
     for i in clothes:
-        if i[1] in answer:
-            answer[i[1]] += 1
-        else:
-            answer[i[1]] = 1        
-    ans = 1
-    for i in answer.values():
-        ans *= (i + 1)
+        dd[i[1]] += 1      
+    answer = 1
+    for i in dd.values():
+        answer *= (i + 1)
            
-    return ans - 1
+    return answer - 1
