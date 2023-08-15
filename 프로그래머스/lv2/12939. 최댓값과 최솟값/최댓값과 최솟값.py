@@ -3,6 +3,4 @@ def solution(s):
     nums = []
     for i in s.split(' '):
         nums.append(int(i))
-    answer += str(min(nums)) + ' ' + str(max(nums))
-
-    return answer
+    return str(min(nums)) + ' ' + str(max(nums))
